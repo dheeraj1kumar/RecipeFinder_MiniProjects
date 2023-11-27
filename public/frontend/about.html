@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{ 
+            background-image:url(data:image/jpeg;base64,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);
+            
+        }
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+section nav .logo img{
+    width: 100px;
+    cursor: pointer;
+    margin: 7px 0;
+}
+section nav ul{
+    list-style: none;
+}
+section nav ul li{
+    display: inline-block;
+    margin: 0px 15px;
+    padding-top: 15px;
+}
+section nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+}
+section nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: maroon;
+    display: block;
+    transition: 0.2s linear;
+}
+section nav ul li a:hover::after{
+width: 100%;
+}
+section nav .icon i{
+    font-size: 18px;
+    color: #000;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+
+        .outer-div{
+            width: 98.9vw;
+      
+        }
+        .inner-div-1{
+            margin-left: 50px;
+            margin-right: 50px;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+        img{
+            width: 600px;
+        }
+        h1{
+            font-family: mv boli;
+            color: maroon;
+        }
+        p{
+            font-family:mv boli;
+            font-size: 1rem;
+            line-height: 1.75rem;
+            text-underline-offset: 0.25rem;
+            width: 600px;
+            font-weight: 400;
+            background-color: #f086b5;
+        }
+        .main-div{
+            
+           padding-top: 150px;
+            flex-direction: column;
+            
+        }
+        hr{
+            margin: 0;
+            width: 600px;
+            height: 1px;
+            background-color: #e2ad50;
+        }
+        .quote-div{
+            margin: 70px 0;
+        }
+        .quote-para{
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-family: CopperPot,Helvetica,sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 1.5rem;
+            text-underline-offset: 0.3125rem;
+            width: 600px;
+            background-color: #7a8db7;
+        }
+        .author-div{
+            margin-top: 0.5rem;
+            text-align: center;
+            text-transform: uppercase;
+            color: rgba(0,0,0,.65);
+            font-family: SourceSansPro,Helvetica,sans-serif;
+            font-size: .875rem;
+            line-height: 1.25rem;
+            text-underline-offset: 0.1875rem;
+            margin-bottom: 20px;
+            background-color: #7a8db7;
+        }
+        .join-div{
+            width: 552px;
+            height: 120px;
+            margin: 48px 0;
+            padding: 24px;
+        }
+        .join-para{
+            width: 550px;
+            display: inline-block;
+            margin: 0;
+            font-family: SourceSansPro,Helvetica,sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.75rem;
+            text-underline-offset: 0.25rem;
+            
+        }
+        a{
+             
+            font-family: SourceSansPro,Helvetica,sans-serif;
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+            text-underline-offset: 0.25rem;
+            
+        }
+        a:hover{
+            text-decoration: underline;
+            text-underline-offset: 0.35rem;
+        }
+        .inner-div-2{
+        background-color: #F2F2F2;
+            padding: 32px 32px;
+        }
+        .footer-div{
+            display: flex;
+            flex-direction: row;
+        }
+        .footer-primary{
+            display: inline-block;
+            margin-left: 50px;
+            margin-right: 180px;
+        }
+        .footer-logo{
+            width: 189px;
+            height : 47px;
+            margin-bottom: 30px;
+        }
+        .footer-btn{
+            width: 270px;
+            height: 48px;
+            background-color: white;
+            border:2.5px solid #F15025 ;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 200ms;
+            margin-bottom: 30px;
+        }
+        .footer-btn:hover{
+            background-color: #F15025;
+            color: white;
+        }
+        .footer-primary{
+            width: 320px;
+            height: 420px;
+        }
+        .footer-mag-pic{
+            width: 270px;
+        }
+       
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-youtube {
+  background: red;
+  color: white;
+}
+.fa-instagram {
+  background:  #E4405F;
+  color: white;
+}
+
+.fa {
+    
+  padding: 20px;
+  font-size: 30px;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+h5{
+    font-family: SourceSansPro,Helvetica,sans-serif;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    text-underline-offset: 0.1875rem;
+    color: grey;
+}
+.footer-secondary{
+    display: flex;
+    flex-direction: row;
+    
+    margin-top: 80px;
+}
+.details-div
+{
+    display: flex;
+    flex-direction: column;
+    margin-right: 180px;
+}
+.details-span{
+    font-family: SourceSansPro,Helvetica,sans-serif;
+    font-size: .775rem;
+    font-weight: 700;
+    letter-spacing: .5px;
+    line-height: 1.25rem;
+    text-transform: uppercase;
+    text-underline-offset: 0.25rem;
+    margin-bottom: 15px;
+}
+.details-span:hover{
+    -webkit-text-decoration-color: #d54215;
+    text-decoration: underline;
+    text-decoration-color: #d54215;
+    color: rgba(0,0,0,.95);
+    cursor: pointer;
+    
+
+}
+.details-span-2{
+    font-family: SourceSansPro,Helvetica,sans-serif;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    text-underline-offset: 0.1875rem;
+    margin-bottom: 15px;
+}
+.details-span-2:hover{
+    /* a:-webkit-any-link { */
+    /* color: -webkit-link; */
+    color: #e2ad50;
+    cursor: pointer;
+    text-decoration: underline;
+
+}
+.side-list-div{
+    display: flex;
+    flex-direction: row;
+}
+.side-div{
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+.adiv a{
+    text-decoration: none;
+    color: rgb(177, 0, 0);
+}
+    </style>
+</head>
+<body>
+<section>
+    <nav>
+        <div class="logo">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEBUQEhMVFRUXFRUVFhUXFRgVGBgdFhgWFhUVGBYZHCggHRolGxUVITEhJSkrLi4uGB8zODMsNygtLisBCgoKDg0OGxAQGyslICUuLS0uLy0tLy0tLy0tLzctLS0tLS8tLS0tLS0tLS0tLS0tKy0tLS0tLS0tLS0tLS0tLf/AABEIAHEBvAMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAABQYHBAMCAf/EAEYQAAEDAQMGCQkFBwQDAAAAAAEAAgMRBAYhBRIxQVFxBxMiNGGBkaGxMkJScnOCkrLRI2LBwuEUM0Njg6KzFiRTkxXw8f/EABoBAQACAwEAAAAAAAAAAAAAAAAEBQEDBgL/xAA7EQABAwICBwQJAwQCAwAAAAABAAIDBBEFIRIxQVFxgbEzYZHBExQiMjSh0eHwI7LxJDVCghVyUmKS/9oADAMBAAIRAxEAPwDcURERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERF8PcAKnADElfag7y2ujRGPOxO4au3wWmomEMZkOxe4ozI8NC48oZce4kRHNbt1np6FwsynM01Ejus1HYVyIuSkq53u0i48jbwsrxsEbW2DQrZkrKgl5JweNWo9I+ilVQ7PMWOD26Qa/orrHKHNDm6CAR1roMMrHVDC1/vD5jequsgETrt1Fe6Iis1ERERERERERFGZftDo7LNIw5rmsJBwNDtxwWYS3htbtNok6nU+Wiiz1TYSAQSrCiw59U0uaQAMs7rYkWX3LtL321mc97sH+U4u807Srveq1Piskkkbs14zaOoDSr2g6RTQSvUVQJIy+1rLzU0LoZmw3uTbftNuKmUWOS5ftTtNol6nFvhRTNwrQ91sOc9zvs3+U4nW3aVpZXNe8NDTnwUqbB3xROkc8ZC+V/stKREU5U6IiIiIiIiIiIiIiIiIiIiIiIiIiIiLltttjhYZJHBjRrPgBrPQF1LNeES0udaRGTyWMBA6XVJPgOpaKib0TNJS6Gl9ZmEd7DWeSsZvxZK0+0p6WYKeNe5TeT8oRTsz4nh40YaQdhBxB3rF1ZLgWpzbWGDyZGuDhq5ILgeqneoUFc9zw1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">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <!-- <li><a href="#Menu">Menu</a></li>
+            <li><a href="#Gallary">Gallary</a></li>
+            <li><a href="Recipe.html">Recipes</a></li> -->
+        </ul>
+    </nav>
+</section>
+
+
+
+
+    <div class="outer-div">
+        <div class="inner-div-1">
+            <div class="main-div">
+                <img src="https://www.allrecipes.com/thmb/imQD6ZjD3UQ7GfG9a3kpMFChlMs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/MeetTheCrew4-2edded126ee64c94a275d7b15c437e0e.png" alt="">
+                <br>
+                <br>
+                <span>
+                    <h1>
+                        Who are our Allstars?
+                    </h1>
+                </span>
+               
+                <p>
+                    Social media influencers, registered dietitians, grillmasters, and more seasoned home cooks make up our enthusiastic squad of 100+ brand ambassadors. This diverse, food-loving crew spans the U.S. geographically and represents many different cultures, ethnicities, and family makeups. Since 2011, the Allstars have created tens of thousands of original recipes, photos, and reviews plus shared their cooking expertise via flat and video content on our website, social media, plus more marketing channels.
+                </p>
+                <img src="https://www.allrecipes.com/thmb/R1cdrXfXHGvhacPEVql9meQ0sQ8=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Untitleddesign35-2640d21e54b5472babf5e1af47dfbe4e.png" alt="">
+                <span>
+                    <h1>
+                        Home cooks are our heroes!
+                    </h1>
+                </span>
+                <p>
+                    Allrecipes is the world's largest community-driven food site and our Allstars give a voice to the more than 60 million home cooks who visit each month. From meal planning to smart grocery shopping to seasonal cooking trends, this group of power users is regularly tapped for their subject matter expertise. In short, the Allstars make all our home cooking adventures more successful.
+                </p>
+                <img src="https://www.allrecipes.com/thmb/m3vfu2GMR4Nv3hqaz4TTw03nYqE=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/3-15baace7dfae4ed4acab826162e6f4b9.png" alt="">
+                
+                <div class="quote-div">
+                    <hr>
+                    <p class="quote-para">
+                        "I was a side hustle blogger and a home cook with dreams of something bigger. I'm now a full-time content creator, seasoned recipe developer, and two-time published cookbook author. I wouldn't be where I am today without the experience I have gained creating recipes for Allrecipes and being part of the Allstar program."
+                    </p>
+                    <div class="author-div">
+                        — ALLSTAR RAMONA CRUZ-PETERS
+                    </div>
+                    <hr>
+                </div>
+                
+                <span>
+                    <h1>
+                        Are you the next Allstar?
+                    </h1>
+                </span>
+                <p>
+                    <strong>Get Plugged In:</strong> Love our brand? As an Allstar you’ll get behind-the-scenes sneak peeks of new and exciting launches, features, recipes, promotions, and products. 
+                </p>
+
+                <p>
+                    <strong>Call the Shots:</strong> Feedback from our community fuels us—we are the site that was built for and by home cooks, after all. You’ll have countless opportunities to tell us what you think and help shape the future of the program and the brand.
+                </p>
+                    
+                <p>
+                    <strong>Grow Your Network:</strong> Connect with Allstars from all over the country, trade cooking know-how, learn about food media opportunities, and attend exclusive Allstar events and social meet ups throughout the year.
+                </p>
+                <p>
+                    <strong>Expand Your Brand:</strong> As an Allstar and brand influencer, you’ll be regularly featured in promotions on our website, marketing channels, and our Allrecipes magazine. Your cooking prowess and brilliance will be exposed to new audiences in the tens of millions.
+                </p>
+                
+                <div class="join-div">
+                    <p class="join-para">Join our team of Allstars and you'll be creating content for America's largest digital food media brand!</p>
+                </div>
+                <div class="adiv" ><a href="http://127.0.0.1:5500/index.html"> Hope You Enjoyed US &hearts;</a>
+                </div>
+                
+
+                
+            </div>
+            
+        </div>
+        <div class="inner-div-2">
+              <div class="footer-div">
+                <div class="footer-primary">
+                    <img class="footer-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo7PHXqSVTDsDIcbAw9YZig6zfA_4UykZ1biHl5ipY&s" alt="">
+                    <button class="footer-btn">NEWSLETTER</button>
+                    <img class="footer-mag-pic" src="https://www.allrecipes.com/thmb/654t4XHoQIwmjRLxb1jkXyA7xOY=/300x150/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/ar_magazine-457b736e5ed6442ea95b29d69489d496.png" alt="">
+                    
+                    <h5>Follow Us</h5>
+
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </div>
+                <div class="footer-secondary">
+                    <div class="details-div">
+                    <span class="details-span">DINNERS</span>
+                    <span class="details-span">MEALS</span>
+                    <span class="details-span">INGREDIENTS</span>
+                    <span class="details-span">OCCASIONS</span>
+                    <span class="details-span">CUISINES</span>
+                    <span class="details-span">KITCHEN TIPS</span>
+                    <span class="details-span">NEWS</span>
+                    <span class="details-span">FEATURES</span>
+                    </div>
+
+                    <div class="side-list-div">
+                        <div class="side-div">
+                            <span class="details-span-2">About Us</span>
+                            <span class="details-span-2">Anti-Racism Pledge</span>
+                            <span class="details-span-2">Anti-Racism Pledge</span>
+                            <span class="details-span-2">Advertise</span>
+                            <span class="details-span-2">Advertise</span>
+                            <span class="details-span-2">Contact</span>
+                            </div>
+    
+                            <div class="side-div">
+                                <span class="details-span-2">Editorial Process</span>
+                                <span class="details-span-2">Privacy Policy</span>
+                                <span class="details-span-2">Terms of Service</span>
+                                <span class="details-span-2">Careers</span>
+                                
+                                </div>
+                    </div>
+                    
+                </div>
+              </div>      
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
