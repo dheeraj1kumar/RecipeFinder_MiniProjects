@@ -11,7 +11,7 @@ Here are how this app looks :
 
 <img src="https://raw.githubusercontent.com/kevinadhiguna/food-recipe-app/master/demo/fra-1.png" width="90%"></img> <br><br>
 Click `how to cook` to see instruction to cook and `ingredients` button to see ingredients : <br><br>
-<img src="https://raw.githubusercontent.com/kevinadhiguna/food-recipe-app/master/demo/fra-3.png" width="90%"></img>
+<img src="https://github.com/dheeraj1kumar/RecipeFinder_MiniProjects/blob/main/image/Screenshot%20(435).png" width="90%"></img>
 
 ### Ingredients of food
 
