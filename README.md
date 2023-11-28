@@ -9,7 +9,7 @@ Food Recipe App presents you the ingredients of food that you may like and how t
 
 Here are how this app looks :
 
-<img src="https://raw.githubusercontent.com/kevinadhiguna/food-recipe-app/master/demo/fra-1.png" width="90%"></img> <br><br>
+<img src="https://github.com/dheeraj1kumar/RecipeFinder_MiniProjects/blob/main/image/Screenshot%20(433).png"></img> <br><br>
 Click `how to cook` to see instruction to cook and `ingredients` button to see ingredients : <br><br>
 <img src="https://github.com/dheeraj1kumar/RecipeFinder_MiniProjects/blob/main/image/Screenshot%20(435).png" width="90%"></img>
 
