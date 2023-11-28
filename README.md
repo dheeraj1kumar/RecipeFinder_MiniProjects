@@ -5,7 +5,7 @@ Food Recipe App presents you the ingredients of food that you may like and how t
 
 <br />
 
-## Demo
+## Demo of the project
 
 Here are how this app looks :
 
