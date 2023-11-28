@@ -194,12 +194,11 @@ document.addEventListener('DOMContentLoaded', function(){
     })
 })
 
-let input=document.querySelector('input');
-input.addEventListener('keyup',(e)=>{
-    if(e.keyCode===13){
+let input=document.getElementById('recipe2');
+input.addEventListener('click',(e)=>{
         const recipePageHref = "recipefinder.html";
-        window.open(recipePageHref, "_blank");
-    }
+        window.open(recipePageHref, "_self");
+    
 })
 
 

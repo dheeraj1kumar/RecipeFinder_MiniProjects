@@ -13,15 +13,14 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(methodOverride('_method'))
 
- app.use(express.static(path.join(__dirname, 'public/frontend')));
-// app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public/frontend')));
 
 
 app.use(express.urlencoded({ extended: true }))
 
 mongoose.connect('mongodb://127.0.0.1:27017/e-commerce')
-    .then(() => { console.log('DB connected!') })
-    .catch(e => console.log(e));
+.then(() => { console.log('DB connected!') })
+.catch(e => console.log(e));
 
 
 // --------------- routes

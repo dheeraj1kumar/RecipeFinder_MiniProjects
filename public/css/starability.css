@@ -1,4 +1,4 @@
-.starability-result {
+/* .starability-result {
     position: relative;
     width: 150px;
     height: 30px;
@@ -195,4 +195,4 @@ screen and (min-resolution: 192dpi) {
     .starability-basic>label::after {
         display: none;
     }
-}
+} */

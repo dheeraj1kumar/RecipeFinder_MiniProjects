@@ -68,7 +68,7 @@ section nav .icon .search_box a, a:hover{
 }
 .searchText{
     border-radius: 5rem;
-    width: 10rem;
+    width: 12rem;
     padding: 0.2rem;
   transition: all 0.2s linear;
 }
