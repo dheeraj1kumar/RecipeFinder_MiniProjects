@@ -1,4 +1,4 @@
-# RecipeFinder_MiniProjects# Food Recipe App
+# RecipeFinder_MiniProjects Food Recipe App
 
 Bored of watching netflix/youtube videos during quarantine? Wanna cook something but have no idea to cook? Then this app is for you!
 Food Recipe App presents you the ingredients of food that you may like and how to cook it!
@@ -7,7 +7,7 @@ Food Recipe App presents you the ingredients of food that you may like and how t
 
 ## Demo of the project
 
-Here are how this app looks :
+## Here are how this app looks :
 
 <img src="https://github.com/dheeraj1kumar/RecipeFinder_MiniProjects/blob/main/image/Screenshot%20(433).png"></img> <br><br>
 Click `how to cook` to see instruction to cook and `ingredients` button to see ingredients : <br><br>
