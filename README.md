@@ -3,7 +3,7 @@
 Bored of watching netflix/youtube videos during quarantine? Wanna cook something but have no idea to cook? Then this app is for you!
 Food Recipe App presents you the ingredients of food that you may like and how to cook it!
 
-<br />
+<br/>
 
 ## Demo of the project
 
